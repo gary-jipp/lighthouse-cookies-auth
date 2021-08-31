@@ -78,14 +78,14 @@ app.get('/protected', (req, res) => {
 
   // check if the user has a cookie set
   if (!userId) {
-    return res.status(401).send('you are not authorized to be here');
+    return res.status(401).send('you are not allowed to be here');
   }
 
   // retrieve the user based on userId
   const user = users[userId];
 
   if (!user) {
-    return res.status(400).send('you have an old cookie! git gud!');
+    return res.status(400).send('you have an old cookie!');
   }
 
   res.render('protected', { user });
