@@ -12,6 +12,11 @@ http://localhost:8080/home
 
 http://localhost:8080/about
 
+http://localhost:8080/protected
+
+http://localhost:8080/register
+
+http://localhost:8080/login
 
 ### HTTP and Cookies
 * **HTTP** is a stateless protocol which means that the participants are not required to remember any previous communication
