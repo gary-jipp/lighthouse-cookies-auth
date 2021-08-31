@@ -1,16 +1,25 @@
-# W03D03 - HTTP Cookies & User Authentication
+# HTTP Cookies & User Authentication
 
 ### To Do
-- [x] HTTP and cookies
-- [x] Render pages differently based on language preference
-- [x] Register user with email and password
+- [] What is a cookie? (Magic cookie)
+- [] Is a cookie code? a File?  is it Dangerous?
+- [] Why Cookies?
+- [] Reading  & Setting cookies
+- [] Render pages with favorite animal
+- [] Register / Login user with email and password
+
+http://localhost:8080/home
+
+http://localhost:8080/about
+
 
 ### HTTP and Cookies
 * **HTTP** is a stateless protocol which means that the participants are not required to remember any previous communication
 * **Cookies**:
+  * Short for Magic Cookie.
   * Allow us to store information about a user between HTTP requests
   * Stored as key/value pairs in the client's browser
-  * Are passed to the server with every HTTP request by the browser
+  * Are passed to the server with every HTTP request by the browser.
   * Usually used to store a unique value that identifies a particular user
 
 ### Reading Cookies
@@ -31,7 +40,7 @@ app.get('/protected', (req, res) => {
 
 ```js
 app.post('/login', (req, res) => {
-  // other authenticatey stuff
+  // handle user's input
   res.cookie('userId', user.id); // set the cookie's key and value
   res.redirect('/');
 });
