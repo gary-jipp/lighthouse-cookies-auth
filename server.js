@@ -138,14 +138,9 @@ app.post('/register', (req, res) => {
     return res.status(400).send('that email address is already in use');
   }
 
-  // add the new user to our users object
+  // add the new user to our users object.
   const id = Math.floor(Math.random() * 1000) + 1;
-
-  users[id] = {
-    id,
-    email,
-    password
-  };
+  users[id] = { id, email, password };
 
   res.redirect('/login');
 });
