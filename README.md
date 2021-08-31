@@ -7,6 +7,10 @@
 - [] Render pages with favorite animal
 - [] Register / Login user with email and password
 
+http://localhost:8080/home
+
+http://localhost:8080/about
+
 ### HTTP and Cookies
 * **HTTP** is a stateless protocol which means that the participants are not required to remember any previous communication
 * **Cookies**:
