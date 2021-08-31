@@ -12,6 +12,13 @@ app.use(cookieParser());
 
 app.set('view engine', 'ejs');
 
+// GET / - Just set a test cookie
+app.get('/', (req, res) => {
+  console.log(req.cookies);
+  res.cookie('testCookie', "hello");
+  res.end('OK');
+});
+
 // GET /home
 app.get('/home', (req, res) => {
   const animal = req.cookies.animal || '____';
