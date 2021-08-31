@@ -29,7 +29,6 @@ const getUserByEmail = (email) => {
       return user;
     }
   }
-
   return null;
 };
 
