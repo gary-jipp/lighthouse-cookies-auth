@@ -1,9 +1,11 @@
 # W03D03 - HTTP Cookies & User Authentication
 
 ### To Do
-- [x] HTTP and cookies
-- [x] Render pages differently based on language preference
-- [x] Register user with email and password
+- [] Why Cookies?
+- [] What is a cookie? Is it code? is it dangerous?
+- [] Reading  & Setting cookies
+- [] Render pages with favorite color
+- [] Register user with email and password
 
 ### HTTP and Cookies
 * **HTTP** is a stateless protocol which means that the participants are not required to remember any previous communication
@@ -31,7 +33,7 @@ app.get('/protected', (req, res) => {
 
 ```js
 app.post('/login', (req, res) => {
-  // other authenticatey stuff
+  // handle user's input
   res.cookie('userId', user.id); // set the cookie's key and value
   res.redirect('/');
 });
