@@ -4,8 +4,8 @@
 - [] Why Cookies?
 - [] What is a cookie? Is it code? is it dangerous?
 - [] Reading  & Setting cookies
-- [] Render pages with favorite color
-- [] Register user with email and password
+- [] Render pages with favorite animal
+- [] Register / Login user with email and password
 
 ### HTTP and Cookies
 * **HTTP** is a stateless protocol which means that the participants are not required to remember any previous communication
