@@ -20,7 +20,7 @@ const users = {
   }
 };
 
-const findUserByEmail = (email) => {
+const getUserByEmail = (email) => {
   // if we find a user, return the user
   // if not, return null
   for (const userId in users) {
@@ -103,7 +103,7 @@ app.post('/login', (req, res) => {
   }
 
   // find the user based on email
-  const user = findUserByEmail(email);
+  const user = getUserByEmail(email);
 
   // did we not find a user?
   if (!user) {
@@ -133,7 +133,7 @@ app.post('/register', (req, res) => {
   }
 
   // find out if email is already in use
-  const user = findUserByEmail(email);
+  const user = getUserByEmail(email);
 
   if (user) {
     return res.status(400).send('that email address is already in use');
