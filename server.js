@@ -33,12 +33,12 @@ app.get('/animals/clear', (req, res) => {
   res.redirect("/home");
 });
 
-// GET /animals/:animalName - set animal cookie
-app.get('/animals/:animalName', (req, res) => {
-  const animalName = req.params.animalName;
+// GET /animals/:name - set animal cookie
+app.get('/animals/:name', (req, res) => {
+  const name = req.params.name;
 
   // set the cookie with animal preference
-  res.cookie('animal', animalName);
+  res.cookie('animal', name);
   res.redirect('/home');
 });
 
