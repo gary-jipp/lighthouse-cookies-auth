@@ -1,8 +1,9 @@
 # HTTP Cookies & User Authentication
 
 ### To Do
+- [] What is a cookie? (Magic cookie)
+- [] Is a cookie code? a File?  is it Dangerous?
 - [] Why Cookies?
-- [] What is a cookie? Is it code? is it dangerous?
 - [] Reading  & Setting cookies
 - [] Render pages with favorite animal
 - [] Register / Login user with email and password
