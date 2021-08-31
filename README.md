@@ -16,9 +16,10 @@ http://localhost:8080/about
 ### HTTP and Cookies
 * **HTTP** is a stateless protocol which means that the participants are not required to remember any previous communication
 * **Cookies**:
+  * Short for Magic Cookie.
   * Allow us to store information about a user between HTTP requests
   * Stored as key/value pairs in the client's browser
-  * Are passed to the server with every HTTP request by the browser
+  * Are passed to the server with every HTTP request by the browser.
   * Usually used to store a unique value that identifies a particular user
 
 ### Reading Cookies
