@@ -1,4 +1,4 @@
-# W03D03 - HTTP Cookies & User Authentication
+# HTTP Cookies & User Authentication
 
 ### To Do
 - [] Why Cookies?
