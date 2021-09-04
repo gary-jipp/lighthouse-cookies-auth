@@ -15,8 +15,8 @@ app.set('view engine', 'ejs');
 const users = {
   'abc': {
     id: 'abc',
-    email: 'jstamos@mail.com',
-    password: '1234'
+    email: '123@abc.com',
+    password: '123'
   }
 };
 
